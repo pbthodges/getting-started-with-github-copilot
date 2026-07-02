@@ -1,0 +1,29 @@
+## Project Structure
+
+This is a **High School Management System API** built with FastAPI. Here's the layout:
+
+- **app.py** — Main backend application. A FastAPI server that manages extracurricular activities (Chess Club, Programming Class, Gym Class) with endpoints to view and sign up for activities.
+- **src/static/** — Frontend files:
+  - `index.html` — Main web page
+  - `app.js` — Frontend logic
+  - `styles.css` — Styling
+- **requirements.txt** — Python dependencies (FastAPI, Uvicorn, httpx, watchfiles)
+- **pytest.ini** — Test configuration
+
+## How to Run
+
+1. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Start the server:**
+   ```bash
+   uvicorn src.app:app --reload
+   ```
+   The `--reload` flag enables auto-restart on code changes (useful for development).
+
+3. **Access the app:**
+   Open your browser to `http://localhost:8000` — it will redirect to the static frontend.
+
+The server will serve the FastAPI API endpoints and the static HTML/CSS/JavaScript frontend.
